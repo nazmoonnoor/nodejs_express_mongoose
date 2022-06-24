@@ -2,6 +2,7 @@
 
 ## Tools
 
+- Express
 - Mongoose
 - Using eslint/prettier with the goal to making code more consistent and avoiding bugs.
 - Yarn as package manager
@@ -18,7 +19,7 @@
 - Note 1: This repository includes the postman collection for the finished API
 - Note 2: Application will run with `yarn dev` command.
 - Note 3: `yarn build` command will build for the production deployment
-- Note 4: An endpoint named `seed` is added to seed some test data.
+- Note 4: An endpoint named `/seed` is added to seed some test data.
 
 ## Git clone
 
