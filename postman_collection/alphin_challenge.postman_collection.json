@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "7c8ab83c-d38f-4c1f-ad92-641a4e48c0a6",
+		"name": "alphin_challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "seed data",
+			"item": [
+				{
+					"name": "healthcheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/healthcheck",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/seed",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"seed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/user/get",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/user/get/62b37be4c7911c56d9c81250",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"get",
+								"62b37be4c7911c56d9c81250"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Albert Hugh\",\r\n    \"email\": \"ahugh@abc.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/user/create",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mcric1@abc.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/user/update/62b49579d25c4e70050b5569",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"update",
+								"62b49579d25c4e70050b5569"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/user/delete/62b57c16f702e01224d4b6dd",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"delete",
+								"62b57c16f702e01224d4b6dd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "get posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/post/get",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get post by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/post/get/62b588196805ad5285568c1f",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"get",
+								"62b588196805ad5285568c1f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"62b49579d25c4e70050b5569\",\r\n    \"content\": \"This is a sample post!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/post/create",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update post",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"This is an updated post!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/post/update/62b588196805ad5285568c1f",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"update",
+								"62b588196805ad5285568c1f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/post/delete/62b588196805ad5285568c1f",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"post",
+								"delete",
+								"62b588196805ad5285568c1f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "postcomment",
+			"item": [
+				{
+					"name": "get post comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/postcomment/get",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"postcomment",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get post comments by user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/postcomment/getByUser/62b49579d25c4e70050b55a0",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"postcomment",
+								"getByUser",
+								"62b49579d25c4e70050b55a0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get top hashtags and mentions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/postcomment/getHashtagsAndMentions/10",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"postcomment",
+								"getHashtagsAndMentions",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get post comment by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/postcomment/get/62b49579d25c4e70050b55a0",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"postcomment",
+								"get",
+								"62b49579d25c4e70050b55a0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create postcomment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"62b3822362f78d182716a8f9\",\r\n    \"post_id\": \"62b3822362f78d182716a8f9\",\r\n    \"user_comment\":\"This is a sample comment!\",\r\n    \"hashtags\":[],\r\n    \"mentions\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/postcomment/create",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"postcomment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update postcomment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_comment\":\"This is an updated comment!\",\r\n    \"hashtags\":[\"test1\", \"test2\"],\r\n    \"mentions\":[\"mention1\", \"mention2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/postcomment/update/62b43f5d505e736f0acdf6c6",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"postcomment",
+								"update",
+								"62b43f5d505e736f0acdf6c6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete postcomment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_BASE_URL}}/api/popostcommentst/delete/62eb3822362f78d182716a8f9",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"popostcommentst",
+								"delete",
+								"62eb3822362f78d182716a8f9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
