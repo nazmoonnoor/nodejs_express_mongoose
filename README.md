@@ -30,7 +30,7 @@ git clone https://github.com/nazmoonnoor/domain-adviser-api.git
 cd domain-adviser-api
 ```
 
-## Setup steps (without docker)
+## Setup steps 
 
 - Rename `.env.example` file to `.env`.
 - Install mongodb and change `MONGODB_CONNECTION` in .env file if needed.
