@@ -26,11 +26,11 @@
 Clone the repo and install the dependencies.
 
 ```
-git clone https://github.com/nazmoonnoor/domain-adviser-api.git
-cd domain-adviser-api
+git clone git@github.com:nazmoonnoor/node_mongoose_challenge.git
+cd node_mongoose_challenge
 ```
 
-## Setup steps 
+## Setup steps
 
 - Rename `.env.example` file to `.env`.
 - Install mongodb and change `MONGODB_CONNECTION` in .env file if needed.
